@@ -1,0 +1,28 @@
+# Abbott Framework Samples
+
+## Pre-requisites
+
+### Use a tunnel service to test your bot locally
+
+Strongly recommended to use ngrok, you can check on this link bellow how use ngrok:
+
+https://www.chatbot-academy.com/ngrok-chatbot-development/
+
+## Slack Sample
+
+1. Create an slack app to connect with your BOT
+
+2. Get your slack app Client ID and Client Secret and set into [slack-app.js](./slack-app.js)
+
+3. Run your node bot instance
+
+```
+npm run sample-slack
+```
+
+4. Be sure that your slack app webhooks is configured properly on you [Slack App Portal](https://api.slack.com/apps/[YOUR_APP_ID]/general)
+
+5. Connect your bot with a slack team
+
+- Access the [Slack team login page](https://YOUR_TUNNEL_DNS_ADDRESS/slack/login)
+
