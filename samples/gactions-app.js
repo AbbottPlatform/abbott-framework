@@ -5,13 +5,12 @@ const AbbottFramework = require('../').AbbottFramework;
 const IntentFlowHandler = require('../').IntentFlowHandler;
 
 var abbottConfig = {
-  botName: 'abbott-slack-sample',
-  botFirendlyName: 'Abbott Slack Sample',
+  botName: 'abbott-gactions-sample',
+  botFirendlyName: 'Abbott Actions on Google Sample',
   port: process.env.PORT || 3000,
   platforms: {
-    slack: {
-      clientId: '[YOUR_SLACK_CLIENT_ID]',
-      clientSecret: '[YOUR_SLACK_CLIENT_SECRET]'
+    gactions: {
+      projectId: '[ACTIONS_GOOGLE_PROJECT_ID]'
     }
   },
   nlp: {

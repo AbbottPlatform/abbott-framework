@@ -15,6 +15,12 @@
       "request": "launch",
       "name": "Launch Sample - Facebook",
       "program": "${workspaceRoot}/samples/facebook-app.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Sample - Actions on Google",
+      "program": "${workspaceRoot}/samples/gactions-app.js"
     }
   ]
 }

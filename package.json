@@ -9,6 +9,7 @@
   "scripts": {
     "sample-slack": "node samples/slack-app.js",
     "sample-facebook": "node samples/facebook-app.js",
+    "sample-gactions": "node samples/gactions-app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

@@ -40,3 +40,24 @@ npm run sample-facebook
 
 4. Be sure that your facebook app webhooks is configured properly on you [Facebook Messenger App Portal](https://developers.facebook.com/apps/[YOUR_APP_ID]/messenger/)
 
+## Actions on Google Sample
+
+1. Create an Actions on Google project to connect with your BOT
+- [Actions on Google Console](https://console.actions.google.com)
+
+2. Get your Actions on Google Project Id and set into the files bellow:
+- [gactions-app.js](gactions-app.js)
+- [actons-on-google/updateActionsGoogle.sh](actons-on-google/updateActionsGoogle.sh)
+
+3. Run your node bot instance
+
+```
+npm run sample-gactions
+```
+
+4. Be sure that your Actions on Google app webhooks is configured properly on your [actions.json file](actons-on-google/action.json)
+
+5. Download / Install the [GActions CLI](https://developers.google.com/actions/tools/gactions-cli)
+
+6. Deploy yor action package
+
