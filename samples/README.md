@@ -24,5 +24,19 @@ npm run sample-slack
 
 5. Connect your bot with a slack team
 
-- Access the [Slack team login page](https://YOUR_TUNNEL_DNS_ADDRESS/slack/login)
+- Access the [Slack team login page](https://[YOUR_TUNNEL_DNS_ADDRESS]/slack/login)
+
+## Facebook Sample
+
+1. Create an facebook messager app to connect with your BOT
+
+2. Get your facebook app Access Token and App Secret and set into [facebook-app.js](facebook-app.js)
+
+3. Run your node bot instance
+
+```
+npm run sample-facebook
+```
+
+4. Be sure that your facebook app webhooks is configured properly on you [Facebook Messenger App Portal](https://developers.facebook.com/apps/[YOUR_APP_ID]/messenger/)
 

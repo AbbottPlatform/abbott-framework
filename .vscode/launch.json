@@ -9,6 +9,12 @@
       "request": "launch",
       "name": "Launch Sample - Slack",
       "program": "${workspaceRoot}/samples/slack-app.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Sample - Facebook",
+      "program": "${workspaceRoot}/samples/facebook-app.js"
     }
   ]
 }
