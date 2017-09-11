@@ -8,8 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Sample - Slack",
-      "program": "${workspaceRoot}/samples/slack-app.js",
-      "envFile": "${workspaceRoot}/samples/.env"
+      "program": "${workspaceRoot}/samples/slack-app.js"
     }
   ]
 }
