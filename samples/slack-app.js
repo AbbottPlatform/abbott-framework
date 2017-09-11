@@ -16,7 +16,7 @@ var abbottConfig = {
   },
   nlp: {
     apiai: {
-      token: '[YOR_API.AI_DEVELOPER_TOKEN]'
+      token: '[YOUR_API.AI_DEVELOPER_TOKEN]'
     }
   }
 };

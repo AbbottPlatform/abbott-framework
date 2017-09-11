@@ -12,7 +12,7 @@ https://www.chatbot-academy.com/ngrok-chatbot-development/
 
 1. Create an slack app to connect with your BOT
 
-2. Get your slack app Client ID and Client Secret and set into [slack-app.js](./slack-app.js)
+2. Get your slack app Client ID and Client Secret and set into [slack-app.js](slack-app.js)
 
 3. Run your node bot instance
 
