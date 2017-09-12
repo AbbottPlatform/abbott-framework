@@ -21,6 +21,18 @@
       "request": "launch",
       "name": "Launch Sample - Actions on Google",
       "program": "${workspaceRoot}/samples/gactions-app.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Sample - Abbott",
+      "program": "${workspaceRoot}/samples/abbott-app.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Sample - Abbott Client",
+      "program": "${workspaceRoot}/samples/abbott-app-client.js"
     }
   ]
 }
