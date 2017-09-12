@@ -61,3 +61,6 @@ npm run sample-gactions
 
 6. Deploy yor action package
 
+```bash
+$ ./samples/actions-on-google/updateActionsGoogle.sh
+```
