@@ -1,0 +1,48 @@
+{
+  "name": "abbott-framework",
+  "version": "1.5.0",
+  "description": "Abbott Framework is a framework to bring productivity and abstractions to help you to build awesome chatbots.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=7.10.0"
+  },
+  "scripts": {
+    "sample-slack": "node samples/slack-app.js",
+    "sample-facebook": "node samples/facebook-app.js",
+    "sample-gactions": "node samples/gactions-app.js",
+    "sample-abbott": "node samples/abbott-app.js",
+    "sample-abbott-client": "node samples/abbott-app-client.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [
+    "bot",
+    "chatbot",
+    "abbott",
+    "slack",
+    "google",
+    "facebook",
+    "apiai",
+    "api.ai"
+  ],
+  "dependencies": {
+    "actions-on-google": "^1.1.0",
+    "api-ai-botkit": "^1.1.1",
+    "body-parser": "^1.15.2",
+    "botkit": "github:AbbottPlatform/botkit#v0.8.0",
+    "botkit-storage-datastore": "github:AbbottPlatform/botkit-storage-datastore#v1.0.0",
+    "express": "^4.14.0",
+    "jspath": "^0.3.4",
+    "localeval": "^15.2.3",
+    "logging": "^3.2.0",
+    "messageformat": "^1.0.2",
+    "node-fetch": "^1.6.3",
+    "object-mapper": "^3.0.1",
+    "querystring": "^0.2.0",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "node-env-file": "^0.1.8"
+  }
+}

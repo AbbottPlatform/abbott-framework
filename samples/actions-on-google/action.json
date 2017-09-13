@@ -1,0 +1,21 @@
+{
+	"actions": [
+      {
+        "description": "Default Welcome Intent",
+        "name": "MAIN",
+        "fulfillment": {
+          "conversationName": "[ACTIONS_GOOGLE_CONVERSATION_NAME]"
+        },
+        "intent": {
+          "name": "actions.intent.MAIN"
+        }
+      }
+    ],
+    "conversations": {
+      "[ACTIONS_GOOGLE_CONVERSATION_NAME]": {
+        "name": "[ACTIONS_GOOGLE_CONVERSATION_NAME]",
+        "url": "https://[YOUR_TUNNEL_DNS_ADDRESS]/gactions/receive"
+      }
+    }
+
+}
