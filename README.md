@@ -3,6 +3,7 @@
 Abbott Framework is a framework to bring productivity and abstractions to help you to build awesome chatbots.
 
 [![dependencies Status](https://david-dm.org/AbbottPlatform/abbott-framework/status.svg)](https://david-dm.org/AbbottPlatform/abbott-framework)
+[![devDependencies Status](https://david-dm.org/AbbottPlatform/abbott-framework/dev-status.svg)](https://david-dm.org/AbbottPlatform/abbott-framework?type=dev)
 
 ## Getting Started
 
