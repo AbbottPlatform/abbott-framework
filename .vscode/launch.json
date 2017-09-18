@@ -25,6 +25,12 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "Launch Sample - Google Chats",
+      "program": "${workspaceRoot}/samples/gchats-app.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "Launch Sample - Abbott",
       "program": "${workspaceRoot}/samples/abbott-app.js"
     },
@@ -33,6 +39,12 @@
       "request": "launch",
       "name": "Launch Sample - Abbott Client",
       "program": "${workspaceRoot}/samples/abbott-app-client.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Test - Object Mapper",
+      "program": "${workspaceRoot}/tests/test-object-mapper.js"
     }
   ]
 }
