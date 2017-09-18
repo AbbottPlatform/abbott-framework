@@ -3,5 +3,7 @@
 typings.json
 typings
 .gitignore
+tests
 samples
-docs
+./docs
+./bot

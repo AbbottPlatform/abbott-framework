@@ -1,6 +1,6 @@
 {
   "name": "@abbott-platform/abbott-framework",
-  "version": "1.5.2",
+  "version": "1.6.0",
   "description": "Abbott Framework is a framework to bring productivity and abstractions to help you to build awesome chatbots.",
   "main": "index.js",
   "engines": {
@@ -10,9 +10,11 @@
     "sample-slack": "node samples/slack-app.js",
     "sample-facebook": "node samples/facebook-app.js",
     "sample-gactions": "node samples/gactions-app.js",
+    "sample-gchats": "node samples/gchats-app.js",
     "sample-abbott": "node samples/abbott-app.js",
     "sample-abbott-client": "node samples/abbott-app-client.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "npm publish --access public"
   },
   "author": "Vinicius Patrinhani @ CI&T",
   "license": "MIT",
@@ -24,14 +26,16 @@
     "google",
     "facebook",
     "apiai",
+    "gchats",
+    "google chats",
     "api.ai"
   ],
   "dependencies": {
+    "@abbott-platform/api-ai-botkit": "^1.5.4",
+    "@abbott-platform/botkit": "^1.5.3",
+    "@abbott-platform/botkit-storage-datastore": "^1.0.1",
     "actions-on-google": "^1.1.0",
-    "api-ai-botkit": "^1.1.1",
     "body-parser": "^1.15.2",
-    "botkit": "github:AbbottPlatform/botkit#v0.8.0",
-    "botkit-storage-datastore": "github:AbbottPlatform/botkit-storage-datastore#v1.0.0",
     "express": "^4.14.0",
     "jspath": "^0.3.4",
     "localeval": "^15.2.3",
