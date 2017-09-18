@@ -13,8 +13,10 @@
     "sample-gchats": "node samples/gchats-app.js",
     "sample-abbott": "node samples/abbott-app.js",
     "sample-abbott-client": "node samples/abbott-app-client.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "npm publish --access public"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "author": "Vinicius Patrinhani @ CI&T",
   "license": "MIT",
