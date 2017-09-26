@@ -1,6 +1,6 @@
 {
   "name": "@abbott-platform/abbott-framework",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Abbott Framework is a framework to bring productivity and abstractions to help you to build awesome chatbots.",
   "main": "index.js",
   "engines": {
