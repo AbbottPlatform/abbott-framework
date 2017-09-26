@@ -1,6 +1,6 @@
 {
   "name": "@abbott-platform/abbott-framework",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "Abbott Framework is a framework to bring productivity and abstractions to help you to build awesome chatbots.",
   "main": "index.js",
   "engines": {
@@ -13,8 +13,10 @@
     "sample-gchats": "node samples/gchats-app.js",
     "sample-abbott": "node samples/abbott-app.js",
     "sample-abbott-client": "node samples/abbott-app-client.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "npm publish --access public"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "author": "Vinicius Patrinhani @ CI&T",
   "license": "MIT",
@@ -39,7 +41,7 @@
     "express": "^4.14.0",
     "jspath": "^0.3.4",
     "localeval": "^15.2.3",
-    "logging": "^3.2.0",
+    "log4js": "^2.3.3",
     "messageformat": "^1.0.2",
     "node-fetch": "^1.6.3",
     "object-mapper": "^3.0.1",
