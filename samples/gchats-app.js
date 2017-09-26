@@ -3,6 +3,7 @@ env(__dirname + '/.env');
 
 const AbbottFramework = require('../').AbbottFramework;
 const IntentFlowHandler = require('../').IntentFlowHandler;
+const logger = require('../').logging();
 
 var abbottConfig = {
   botName: 'abbott-gchats-sample',
@@ -21,8 +22,14 @@ var abbottConfig = {
   }
 };
 
-const abbottFramework = new AbbottFramework(abbottConfig);
-
-abbottFramework.start();
-
-console.log('Abbott Framework Initialized!');
+try {
+  const abbottFramework = new AbbottFramework(abbottConfig);
+  
+  abbottFramework.start();
+  
+  logger.info('BOT Initialized!');
+}
+catch (err) {
+  logger.error(err);
+  process.exit(1);
+}

@@ -41,7 +41,7 @@
     "express": "^4.14.0",
     "jspath": "^0.3.4",
     "localeval": "^15.2.3",
-    "logging": "^3.2.0",
+    "log4js": "^2.3.3",
     "messageformat": "^1.0.2",
     "node-fetch": "^1.6.3",
     "object-mapper": "^3.0.1",
