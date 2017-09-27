@@ -42,7 +42,6 @@
     "jspath": "^0.3.4",
     "localeval": "^15.2.3",
     "log4js": "^2.3.3",
-    "logging": "^3.2.0",
     "messageformat": "^1.0.2",
     "node-fetch": "^1.6.3",
     "object-mapper": "^3.0.1",
