@@ -44,7 +44,7 @@
     "log4js": "^2.3.3",
     "messageformat": "^1.0.2",
     "node-fetch": "^1.6.3",
-    "object-mapper": "^3.0.1",
+    "object-mapper": "^4.1.0",
     "querystring": "^0.2.0",
     "request": "^2.79.0"
   },
