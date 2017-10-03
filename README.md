@@ -2,9 +2,10 @@
 
 Abbott Framework is a framework to bring productivity and abstractions to help you to build awesome chatbots.
 
-[![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
+[![Coverage percentage][coveralls-image]][coveralls-url]
 
+[![NPM version][npm-image]][npm-url]
 [![dependencies Status][daviddm-image]][daviddm-url]
 [![devDependencies Status][daviddm-dev-image]][daviddm-dev-url]
 
