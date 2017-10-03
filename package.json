@@ -1,6 +1,6 @@
 {
   "name": "@abbott-platform/abbott-framework",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "Abbott Framework is a framework to bring productivity and abstractions to help you to build awesome chatbots.",
   "main": "index.js",
   "engines": {
@@ -13,7 +13,9 @@
     "sample-gchats": "node samples/gchats-app.js",
     "sample-abbott": "node samples/abbott-app.js",
     "sample-abbott-client": "node samples/abbott-app-client.js",
-    "test": "mocha test/**/*.spec.js"
+    "test": "mocha test/**/*.spec.js",
+    "cover": "istanbul cover _mocha test/**/*.spec.js",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "publishConfig": {
     "access": "public"
@@ -52,9 +54,13 @@
     "chai": "^4.1.2",
     "chai-json-schema": "^1.5.0",
     "chai-match-pattern": "^1.1.0",
-    "mocha": "^3.5.3",
+    "coveralls": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^4.0.0",
+    "mocha-lcov-reporter": "^1.3.0",
     "mock-require": "^2.0.2",
     "node-env-file": "^0.1.8",
+    "nsp": "^2.8.1",
     "sinon": "^4.0.0"
   },
   "directories": {
