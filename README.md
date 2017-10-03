@@ -84,7 +84,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Inspired by [Botkit](https://github.com/howdyai/botkit)
 
-[npm-image]: https://badge.fury.io/js/@abbott-platform/abbott-framework.svg
+[npm-image]: https://badge.fury.io/js/%40abbott-platform%2Fabbott-framework.svg
 [npm-url]: https://npmjs.org/package/@abbott-platform/abbott-framework
 [travis-image]: https://travis-ci.org/AbbottPlatform/abbott-framework.svg?branch=master
 [travis-url]: https://travis-ci.org/AbbottPlatform/abbott-framework
