@@ -2,10 +2,11 @@
 
 Abbott Framework is a framework to bring productivity and abstractions to help you to build awesome chatbots.
 
-[![Build Status](https://travis-ci.org/AbbottPlatform/abbott-framework.svg?branch=master)](https://travis-ci.org/AbbottPlatform/abbott-framework)
+[![NPM version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
 
-[![dependencies Status](https://david-dm.org/AbbottPlatform/abbott-framework/status.svg)](https://david-dm.org/AbbottPlatform/abbott-framework)
-[![devDependencies Status](https://david-dm.org/AbbottPlatform/abbott-framework/dev-status.svg)](https://david-dm.org/AbbottPlatform/abbott-framework?type=dev)
+[![dependencies Status][daviddm-image]][daviddm-url]
+[![devDependencies Status][daviddm-dev-image]][daviddm-dev-url]
 
 ## Getting Started
 
@@ -82,3 +83,14 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Inspired by [Botkit](https://github.com/howdyai/botkit)
+
+[npm-image]: https://badge.fury.io/js/@abbott-platform/abbott-framework.svg
+[npm-url]: https://npmjs.org/package/@abbott-platform/abbott-framework
+[travis-image]: https://travis-ci.org/AbbottPlatform/abbott-framework.svg?branch=master
+[travis-url]: https://travis-ci.org/AbbottPlatform/abbott-framework
+[daviddm-image]: https://david-dm.org/AbbottPlatform/abbott-framework.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/AbbottPlatform/abbott-framework
+[daviddm-dev-image]: https://david-dm.org/AbbottPlatform/abbott-framework/dev-status.svg
+[daviddm-dev-url]: https://david-dm.org/AbbottPlatform/abbott-framework?type=dev
+[coveralls-image]: https://coveralls.io/repos/AbbottPlatform/abbott-framework/badge.svg
+[coveralls-url]: https://coveralls.io/r/AbbottPlatform/abbott-framework
