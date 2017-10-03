@@ -93,5 +93,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 [daviddm-url]: https://david-dm.org/AbbottPlatform/abbott-framework
 [daviddm-dev-image]: https://david-dm.org/AbbottPlatform/abbott-framework/dev-status.svg
 [daviddm-dev-url]: https://david-dm.org/AbbottPlatform/abbott-framework?type=dev
-[coveralls-image]: https://coveralls.io/repos/AbbottPlatform/abbott-framework/badge.svg
-[coveralls-url]: https://coveralls.io/r/AbbottPlatform/abbott-framework
+[coveralls-image]: https://coveralls.io/repos/github/AbbottPlatform/abbott-framework/badge.svg
+[coveralls-url]: https://coveralls.io/github/AbbottPlatform/abbott-framework
