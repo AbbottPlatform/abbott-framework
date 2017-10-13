@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 const readline = require('readline');
 
 const makeRequest = (message) => {
-  const abbottWebhook = 'http://localhost:3000/abbott/receive';
+  const abbottWebhook = 'http://localhost:3000/abbott/receive?collectPipeData=true';
 
   var payload = {
     query: message,
