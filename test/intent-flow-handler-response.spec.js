@@ -30,7 +30,7 @@ describe('IntentFlowHandler - Response', () => {
   };
     
   describe('Abbott', () => {
-    const customPayloadWeatherTemplateFmt = (payloadMapString) => {
+    const customPayloadWeatherTemplateTextFmt = (payloadMapString) => {
       return `{
         "messageFormat": "Weather in {{cityName}}, {{country}}: Temperature: {{temperature}}, Wind Speed: {{windSpeed}}, Humidity: {{humidity}}",
         "api": {
@@ -48,6 +48,57 @@ describe('IntentFlowHandler - Response', () => {
       }`;
     };
 
+    const customPayloadWeatherTemplateCustomFmt = (payloadMapString) => {
+      return `{
+        "responseAsMessage": true,
+        "api": {
+          "response": {
+            "default": {
+              "richResponse": {
+                "items": [
+                  {
+                    "simpleResponse": {
+                      "textToSpeech": ""
+                    }
+                  },
+                  {
+                    "basicCard": {
+                      "formattedText": "",
+                      "image": {
+                        "accessibilityText": "Weather image representation"
+                      },
+                      "buttons": []
+                    }
+                  }
+                ],
+                "suggestions": []
+              }
+            },
+            "map": ${payloadMapString}
+          }
+        }
+      }`;
+    };
+
+    const validCustomResponseSchema = {
+      title: 'abbott schema custom v1',
+      type: 'object',
+      required: [ 'richResponse' ],
+      properties: {
+        richResponse: {
+          type: 'object',
+          properties: {
+            items: {
+              type: 'array'
+            },
+            suggestions: {
+              type: 'array'
+            }
+          }
+        }    
+      }
+    };
+
     var intentFlowHandler = null;
 
     before(() => {
@@ -59,7 +110,7 @@ describe('IntentFlowHandler - Response', () => {
     describe('#_handleFetchResponse()', () => {
 
       it('should return a simple text response (weather)', () => {
-        let customPayload = normalizeCustomPayload(customPayloadWeatherTemplateFmt(`{
+        let customPayload = normalizeCustomPayload(customPayloadWeatherTemplateTextFmt(`{
           "name": {
             "key": "cityName"
           },
@@ -87,6 +138,56 @@ describe('IntentFlowHandler - Response', () => {
         result.resultMessage.should.equal("Weather in New York, US: Temperature: 10 °C, Wind Speed: 2.86 m/s, Humidity: 76 %");
       });
 
+      it('should return a custom message response (weather)', () => {
+        let customPayload = normalizeCustomPayload(customPayloadWeatherTemplateCustomFmt(`{
+          "name": {
+            "key": "richResponse.items[0].simpleResponse.textToSpeech",
+            "transform": "'Weather in ' + src.name + ', ' + src.sys.country"
+          },
+          "main->temp": {
+            "key": "richResponse.items[1].basicCard.title",
+            "transform": "format.compile('{{data, number, integer}} °C')({{ data: (Number(value) - 273.15) }});"
+          },
+          "weather[0]->icon": {
+            "key": "richResponse.items[1].basicCard.image.url",
+            "transform": "'http://openweathermap.org/img/w/' + value + '.png'"
+          },
+          "wind->speed": {
+            "key": "richResponse.items[1].basicCard.formattedText",
+            "transform": "textBuilder.add('**Wind:** ', value, ' m/s', '    **Humidity:** ', src.main.humidity, ' %').toString()"
+          }
+        }`));
+
+        var result = intentFlowHandler._handleFetchResponse(customPayload, dataWeather, null);
+
+        result.should.be.jsonSchema(validRootResponseSchema);
+
+        result.resultMessage.should.be.jsonSchema(validCustomResponseSchema);
+        
+        chai.expect(result.resultMessage).to.matchPattern({
+          richResponse: {
+            items: [
+              {
+                simpleResponse: {
+                  textToSpeech: 'Weather in New York, US'
+                }
+              },
+              { 
+                basicCard: {
+                  title: '10 °C',
+                  formattedText: '**Wind:** 2.86 m/s    **Humidity:** 76 %',
+                  image: {
+                    url: 'http://openweathermap.org/img/w/01d.png',
+                    accessibilityText: 'Weather image representation'
+                  },
+                  buttons: []
+                }
+              }
+            ],
+            suggestions: []
+          }
+        });
+      });
     });
 
   });
