@@ -3,6 +3,10 @@
 <dl>
 <dt><a href="#AbbottFramework">AbbottFramework</a></dt>
 <dd></dd>
+<dt><a href="#BaseController">BaseController</a></dt>
+<dd></dd>
+<dt><a href="#BaseProcessor">BaseProcessor</a></dt>
+<dd></dd>
 </dl>
 
 ## Typedefs
@@ -30,6 +34,40 @@
 | Param | Type |
 | --- | --- |
 | options | AbbottFrameworkOptions | 
+
+
+<br/><br/><br/>
+
+<a id="BaseController"></a>
+
+<h5 style="margin: 10px 0px; border-width: 5px 0px; padding: 5px; border-style: solid;">
+  BaseController</h5>
+<br/><br/><br/>
+
+<a id="new_BaseController_new"></a>
+
+<h5 style="margin: 10px 0px; border-width: 5px 0px; padding: 5px; border-style: solid;">
+  new BaseController()</h5>Controller Base Class for chat engines.
+
+
+<br/><br/><br/>
+
+<a id="BaseProcessor"></a>
+
+<h5 style="margin: 10px 0px; border-width: 5px 0px; padding: 5px; border-style: solid;">
+  BaseProcessor</h5>
+<br/><br/><br/>
+
+<a id="new_BaseProcessor_new"></a>
+
+<h5 style="margin: 10px 0px; border-width: 5px 0px; padding: 5px; border-style: solid;">
+  new BaseProcessor(key, abbottCore)</h5>NLP Processor base class.
+
+
+| Param | Type |
+| --- | --- |
+| key | string | 
+| abbottCore | Object | 
 
 
 <br/><br/><br/>
