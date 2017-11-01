@@ -1,0 +1,150 @@
+{
+  "docs": [
+    {
+      "comment": "/**\n  @typedef AbbottFrameworkOptions\n  @name AbbottFramework-Options\n  @type {object}\n  @property {boolean} debug - Enable debug mode.\n */",
+      "meta": {
+        "filename": "abbott.js",
+        "lineno": 12,
+        "columnno": 0,
+        "path": "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib",
+        "code": {}
+      },
+      "kind": "typedef",
+      "name": "AbbottFramework-Options",
+      "type": {
+        "names": [
+          "object"
+        ]
+      },
+      "properties": [
+        {
+          "type": {
+            "names": [
+              "boolean"
+            ]
+          },
+          "description": "Enable debug mode.",
+          "name": "debug"
+        }
+      ],
+      "longname": "AbbottFramework-Options",
+      "scope": "global",
+      "___id": "T000002R000012",
+      "___s": true
+    },
+    {
+      "comment": "/**\n * Main Abbott Framework Class.\n * @name AbbottFramework\n * @class\n * @param {AbbottFrameworkOptions} options\n */",
+      "meta": {
+        "filename": "abbott.js",
+        "lineno": 19,
+        "columnno": 0,
+        "path": "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib",
+        "code": {}
+      },
+      "description": "Main Abbott Framework Class.",
+      "name": "AbbottFramework",
+      "kind": "class",
+      "params": [
+        {
+          "type": {
+            "names": [
+              "AbbottFrameworkOptions"
+            ]
+          },
+          "name": "options"
+        }
+      ],
+      "longname": "AbbottFramework",
+      "scope": "global",
+      "___id": "T000002R000013",
+      "___s": true
+    },
+    {
+      "comment": "/**\n * Controller Base Class for chat engines.\n * @name BaseController\n * @class\n */",
+      "meta": {
+        "filename": "base-controler.js",
+        "lineno": 11,
+        "columnno": 0,
+        "path": "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/controllers",
+        "code": {}
+      },
+      "description": "Controller Base Class for chat engines.",
+      "name": "BaseController",
+      "kind": "class",
+      "longname": "BaseController",
+      "scope": "global",
+      "___id": "T000002R000180",
+      "___s": true
+    },
+    {
+      "comment": "/**\n * NLP Processor base class.\n * @name BaseProcessor\n * @class\n * @param {string} key\n * @param {Object} abbottCore\n */",
+      "meta": {
+        "filename": "base-processor.js",
+        "lineno": 9,
+        "columnno": 0,
+        "path": "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/nlpProcessors",
+        "code": {}
+      },
+      "description": "NLP Processor base class.",
+      "name": "BaseProcessor",
+      "kind": "class",
+      "params": [
+        {
+          "type": {
+            "names": [
+              "string"
+            ]
+          },
+          "name": "key"
+        },
+        {
+          "type": {
+            "names": [
+              "Object"
+            ]
+          },
+          "name": "abbottCore"
+        }
+      ],
+      "longname": "BaseProcessor",
+      "scope": "global",
+      "___id": "T000002R001128",
+      "___s": true
+    },
+    {
+      "kind": "package",
+      "longname": "package:undefined",
+      "files": [
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/abbott.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/components/express_webserver.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/controllers/abbott/botkit/index.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/controllers/abbott/botkit/worker.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/controllers/abbott/index.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/controllers/base-controler.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/controllers/facebook/index.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/controllers/gactions/index.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/controllers/gchats/botkit/index.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/controllers/gchats/botkit/worker.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/controllers/gchats/index.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/controllers/generic/middlewares/sample_middleware.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/controllers/generic/skills/index.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/controllers/generic/skills/nlp/apiai/index.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/controllers/slack/components/rtm_manager.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/controllers/slack/index.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/core/intent-flow-handler.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/core/responseBuilders/abbott.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/core/responseBuilders/default.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/core/responseBuilders/gchats.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/core/responseBuilders/google.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/core/responseBuilders/slack.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/core/utils/index.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/core/utils/textBuilder.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/logging/index.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/nlpProcessors/apiai/index.js",
+        "/Users/patrinhani/Development/Github/patrinhani-ciandt/AbbottPlatform/abbott-framework/lib/nlpProcessors/base-processor.js"
+      ],
+      "___id": "T000002R001145",
+      "___s": true
+    }
+  ]
+}
