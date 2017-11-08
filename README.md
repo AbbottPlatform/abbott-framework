@@ -91,6 +91,10 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Inspired by [Botkit](https://github.com/howdyai/botkit)
 
+## References
+
+JSDoc + GitBook Integration: https://medium.com/@kevinast/integrate-gitbook-jsdoc-974be8df6fb3
+
 [npm-image]: https://badge.fury.io/js/%40abbott-platform%2Fabbott-framework.svg
 [npm-url]: https://npmjs.org/package/@abbott-platform/abbott-framework
 [travis-image]: https://travis-ci.org/AbbottPlatform/abbott-framework.svg?branch=master
