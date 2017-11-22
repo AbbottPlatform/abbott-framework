@@ -1,3 +1,4 @@
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/AbbottPlatform/abbott-framework.png?columns=all)](https://waffle.io/AbbottPlatform/abbott-framework?utm_source=badge)
 # Abbott Framework
 
 Abbott Framework is a framework to bring productivity and abstractions to help you to build awesome chatbots.
