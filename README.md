@@ -15,6 +15,8 @@ Abbott Framework is a framework to bring productivity and abstractions to help y
 [![dependencies Status][daviddm-image]][daviddm-url]
 [![devDependencies Status][daviddm-dev-image]][daviddm-dev-url]
 
+[GitBook](https://abbott-platform.gitbooks.io/abbott-framework/content/)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
