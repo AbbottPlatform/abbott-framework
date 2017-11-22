@@ -2,11 +2,7 @@
 
 Abbott Framework is a framework to bring productivity and abstractions to help you to build awesome chatbots.
 
-[![HuBoard](https://img.shields.io/github/issues/AbbottPlatform/abbott-framework.svg)](https://huboard.com/AbbottPlatform/abbott-framework)
-[![HuBoard: 0 - Backlog](https://img.shields.io/github/issues/AbbottPlatform/abbott-framework/%220%20-%20Backlog%22.svg)](https://huboard.com/AbbottPlatform/abbott-framework#/?column=%5B%22Backlog%22%5D)
-[![HuBoard: 1 - Ready](https://img.shields.io/github/issues/AbbottPlatform/abbott-framework/%221%20-%20Ready%22.svg)](https://huboard.com/AbbottPlatform/abbott-framework#/?column=%5B%22Ready%22%5D)
-[![HuBoard: 2 - Working](https://img.shields.io/github/issues/AbbottPlatform/abbott-framework/%222%20-%20Working%20%3C=%205%22.svg)](https://huboard.com/AbbottPlatform/abbott-framework#/?column=%5B%22Working%22%5D)
-[![HuBoard: 4 - Done](https://img.shields.io/github/issues/AbbottPlatform/abbott-framework/%224%20-%20Done%22.svg)](https://huboard.com/AbbottPlatform/abbott-framework#/?column=%5B%22Done%22%5D)
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/AbbottPlatform/abbott-framework.png?columns=all)](https://waffle.io/AbbottPlatform/abbott-framework?utm_source=badge)
 
 [![Build Status][travis-image]][travis-url]
 [![Coverage percentage][coveralls-image]][coveralls-url]
