@@ -6,6 +6,7 @@ Abbott Framework is a framework to bring productivity and abstractions to help y
 
 [![Build Status][travis-image]][travis-url]
 [![Coverage percentage][coveralls-image]][coveralls-url]
+[![bitHound Overall Score](https://www.bithound.io/github/AbbottPlatform/abbott-framework/badges/score.svg)](https://www.bithound.io/github/AbbottPlatform/abbott-framework)
 
 [![NPM version][npm-image]][npm-url]
 [![dependencies Status][daviddm-image]][daviddm-url]
