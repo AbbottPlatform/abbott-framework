@@ -19,7 +19,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-* [NodeJS >= 7.10.0](https://nodejs.org)
+* [NodeJS >= 7.10.1](https://nodejs.org)
 
 ### Installing
 
@@ -79,7 +79,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 See also the list of [contributors](https://github.com/AbbottPlatform/abbott-framework/contributors) who participated in this project.
 
-*This project is maintained and encouraged by CI&T - http://www.ciandt.com*
+*This project is suppported and encouraged by CI&T - http://www.ciandt.com*
 
 ## License
 
