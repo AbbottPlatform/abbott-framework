@@ -7,7 +7,7 @@
           "conversationName": "[ACTIONS_GOOGLE_CONVERSATION_NAME]"
         },
         "intent": {
-          "name": "actions.intent.MAIN"
+          "name": "assistant.intent.action.MAIN"
         }
       }
     ],
