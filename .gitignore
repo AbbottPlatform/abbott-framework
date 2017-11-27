@@ -60,3 +60,5 @@ typings/
 .data
 
 /_book/
+
+samples/actions-on-google/creds.data
