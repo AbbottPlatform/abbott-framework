@@ -3,6 +3,7 @@ env(__dirname + '/.env');
 
 const AbbottFramework = require('../').AbbottFramework;
 const IntentFlowHandler = require('../').IntentFlowHandler;
+const logger = require('../').logging();
 
 var abbottConfig = {
   botName: 'abbott-slack-sample',
@@ -22,7 +23,15 @@ var abbottConfig = {
 };
 
 const abbottFramework = new AbbottFramework(abbottConfig);
+  const abbottFramework = new AbbottFramework(abbottConfig);
 
-abbottFramework.start();
-
-console.log('Abbott Framework Initialized!');
+  abbottFramework.start()
+    .then(() => {
+      logger.info('BOT Initialized!');
+    })
+    .catch((err) => logger.error(err));
+}
+catch (err) {
+  logger.error(err);
+  process.exit(1);
+}

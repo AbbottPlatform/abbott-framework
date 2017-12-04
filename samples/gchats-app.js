@@ -24,10 +24,12 @@ var abbottConfig = {
 
 try {
   const abbottFramework = new AbbottFramework(abbottConfig);
-  
-  abbottFramework.start();
-  
-  logger.info('BOT Initialized!');
+
+  abbottFramework.start()
+    .then(() => {
+      logger.info('BOT Initialized!');
+    })
+    .catch((err) => logger.error(err));
 }
 catch (err) {
   logger.error(err);
