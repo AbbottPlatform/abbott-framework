@@ -22,7 +22,7 @@ var abbottConfig = {
   }
 };
 
-const abbottFramework = new AbbottFramework(abbottConfig);
+try {
   const abbottFramework = new AbbottFramework(abbottConfig);
 
   abbottFramework.start()
