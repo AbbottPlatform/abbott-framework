@@ -11,12 +11,12 @@ var abbottConfig = {
   port: process.env.PORT || 3000,
   platforms: {
     gactions: {
-      projectId: '[ACTIONS_GOOGLE_PROJECT_ID]'
+      projectId: process.env.GACTIONS_PROJECTID || '[ACTIONS_GOOGLE_PROJECT_ID]'
     }
   },
   nlp: {
     apiai: {
-      token: '[YOUR_API.AI_DEVELOPER_TOKEN]'
+      token: process.env.NLP_DIALOGFLOW_TOKEN || '[YOUR_API.AI_DEVELOPER_TOKEN]'
     }
   }
 };

@@ -14,7 +14,7 @@ var abbottConfig = {
   },
   nlp: {
     apiai: {
-      token: '[YOUR_API.AI_DEVELOPER_TOKEN]'
+      token: process.env.NLP_DIALOGFLOW_TOKEN || '[YOUR_API.AI_DEVELOPER_TOKEN]'
     }
   }
 };

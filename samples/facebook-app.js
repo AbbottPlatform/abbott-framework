@@ -11,15 +11,15 @@ var abbottConfig = {
   port: process.env.PORT || 3000,
   platforms: {
     facebook: {
-      access_token: '[YOUR_FACEBOOK_ACCESS_TOKEN]',
-      verify_token: '[YOUR_FACEBOOK_VERIFY_TOKEN]', 
-      app_secret: '[YOUR_FACEBOOK_APP_SECRET]',
+      access_token: process.env.FACEBOOK_ACCESS_TOKEN || '[YOUR_FACEBOOK_ACCESS_TOKEN]',
+      verify_token: process.env.FACEBOOK_VERIFY_TOKEN || '[YOUR_FACEBOOK_VERIFY_TOKEN]', 
+      app_secret: process.env.FACEBOOK_APP_SECRET || '[YOUR_FACEBOOK_APP_SECRET]',
       validate_requests: true, // Refuse any requests that don't come from FB on your receive webhook
     }
   },
   nlp: {
     apiai: {
-      token: '[YOUR_API.AI_DEVELOPER_TOKEN]'
+      token: process.env.NLP_DIALOGFLOW_TOKEN || '[YOUR_API.AI_DEVELOPER_TOKEN]'
     }
   }
 };

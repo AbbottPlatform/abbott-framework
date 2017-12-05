@@ -11,13 +11,13 @@ var abbottConfig = {
   port: process.env.PORT || 3000,
   platforms: {
     slack: {
-      clientId: '[YOUR_SLACK_CLIENT_ID]',
-      clientSecret: '[YOUR_SLACK_CLIENT_SECRET]'
+      clientId: process.env.SLACK_CLIENTID || '[YOUR_SLACK_CLIENT_ID]',
+      clientSecret: process.env.SLACK_CLIENTSECRET || '[YOUR_SLACK_CLIENT_SECRET]'
     }
   },
   nlp: {
     apiai: {
-      token: '[YOUR_API.AI_DEVELOPER_TOKEN]'
+      token: process.env.NLP_DIALOGFLOW_TOKEN || '[YOUR_API.AI_DEVELOPER_TOKEN]'
     }
   }
 };
