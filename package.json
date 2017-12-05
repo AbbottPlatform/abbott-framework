@@ -47,7 +47,6 @@
   ],
   "dependencies": {
     "@abbott-platform/api-ai-botkit": "^1.5.4",
-    "@abbott-platform/botkit": "^1.5.3",
     "@abbott-platform/botkit-storage-datastore": "^1.0.1",
     "actions-on-google": "^1.1.0",
     "async": "^2.6.0",
