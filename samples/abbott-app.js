@@ -3,6 +3,7 @@ env(__dirname + '/.env');
 
 const AbbottFramework = require('../').AbbottFramework;
 const IntentFlowHandler = require('../').IntentFlowHandler;
+const logger = require('../').logging();
 
 var abbottConfig = {
   botName: 'abbott-sample',
@@ -13,13 +14,21 @@ var abbottConfig = {
   },
   nlp: {
     apiai: {
-      token: '[YOUR_API.AI_DEVELOPER_TOKEN]'
+      token: process.env.NLP_DIALOGFLOW_TOKEN || '[YOUR_API.AI_DEVELOPER_TOKEN]'
     }
   }
 };
 
-const abbottFramework = new AbbottFramework(abbottConfig);
+try {
+  const abbottFramework = new AbbottFramework(abbottConfig);
 
-abbottFramework.start();
-
-console.log('Abbott Framework Initialized!');
+  abbottFramework.start()
+    .then(() => {
+      logger.info('BOT Initialized!');
+    })
+    .catch((err) => logger.error(err));
+}
+catch (err) {
+  logger.error(err);
+  process.exit(1);
+}
