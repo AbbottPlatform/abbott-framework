@@ -1,6 +1,6 @@
 {
   "name": "@abbott-platform/abbott-framework",
-  "version": "1.7.3",
+  "version": "1.8.0",
   "description": "Abbott Framework is a framework to bring productivity and abstractions to help you to build awesome chatbots.",
   "main": "index.js",
   "engines": {
@@ -25,7 +25,8 @@
     "docs:publish": "gh-pages --dist _book",
     "lint": "jshint --reporter=node_modules/jshint-stylish lib",
     "cover": "istanbul cover _mocha ./test/**/*.spec.js",
-    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
+    "jsinspect": "jsinspect ./lib"
   },
   "publishConfig": {
     "access": "public"
@@ -45,21 +46,28 @@
     "api.ai"
   ],
   "dependencies": {
-    "@abbott-platform/api-ai-botkit": "^1.5.4",
-    "@abbott-platform/botkit": "^1.5.3",
+    "@abbott-platform/api-ai-botkit": "^1.6.0",
     "@abbott-platform/botkit-storage-datastore": "^1.0.1",
     "actions-on-google": "^1.1.0",
+    "async": "^2.6.0",
+    "back": "^1.0.2",
     "body-parser": "^1.15.2",
+    "clone": "^2.1.1",
+    "crypto": "^1.0.1",
     "express": "^4.14.0",
     "gitbook-html": "^1.3.3",
+    "https-proxy-agent": "^2.1.1",
     "jspath": "^0.3.4",
     "localeval": "^15.2.3",
     "log4js": "^2.3.12",
     "messageformat": "^1.0.2",
+    "mustache": "^2.3.0",
     "node-fetch": "^1.6.3",
     "object-mapper": "^4.1.0",
     "querystring": "^0.2.0",
-    "request": "^2.79.0"
+    "request": "^2.79.0",
+    "ware": "^1.3.0",
+    "ws": "^3.3.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -77,6 +85,7 @@
     "jsdoc-to-markdown": "^3.0.2",
     "jshint": "^2.9.5",
     "jshint-stylish": "^2.2.1",
+    "jsinspect": "^0.12.7",
     "mocha": "^4.0.0",
     "mocha-lcov-reporter": "^1.3.0",
     "mock-require": "^2.0.2",

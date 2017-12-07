@@ -57,6 +57,10 @@ typings/
 # dotenv environment variables file
 ./.env
 
+.env-dev
+
 .data
 
 /_book/
+
+samples/actions-on-google/creds.data
