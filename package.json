@@ -26,7 +26,8 @@
     "lint": "jshint --reporter=node_modules/jshint-stylish lib",
     "cover": "istanbul cover _mocha ./test/**/*.spec.js",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
-    "jsinspect": "jsinspect ./lib"
+    "jsinspect": "jsinspect ./lib",
+    "code-complexity": "plato -r -d .complexity-report -l .jshintrc ./lib"
   },
   "publishConfig": {
     "access": "public"
@@ -91,6 +92,7 @@
     "mock-require": "^2.0.2",
     "node-env-file": "^0.1.8",
     "nsp": "^2.8.1",
+    "plato": "^1.7.0",
     "sinon": "^4.0.0"
   },
   "directories": {

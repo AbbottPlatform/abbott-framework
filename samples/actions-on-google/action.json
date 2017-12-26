@@ -4,7 +4,7 @@
         "description": "Default Welcome Intent",
         "name": "MAIN",
         "fulfillment": {
-          "conversationName": "[ACTIONS_GOOGLE_CONVERSATION_NAME]"
+          "conversationName": "abbott-app-test"
         },
         "intent": {
           "name": "actions.intent.MAIN"
@@ -12,9 +12,9 @@
       }
     ],
     "conversations": {
-      "[ACTIONS_GOOGLE_CONVERSATION_NAME]": {
-        "name": "[ACTIONS_GOOGLE_CONVERSATION_NAME]",
-        "url": "https://[YOUR_TUNNEL_DNS_ADDRESS]/gactions/receive"
+      "abbott-app-test": {
+        "name": "abbott-app-test",
+        "url": "https://f9e74e45.ngrok.io/gactions/receive"
       }
     }
 
