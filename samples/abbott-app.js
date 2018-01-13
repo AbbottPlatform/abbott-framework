@@ -1,30 +1,47 @@
+const path = require('path');
 const env = require('node-env-file');
 env(__dirname + '/.env');
 
-const AbbottFramework = require('../').AbbottFramework;
-const IntentFlowHandler = require('../').IntentFlowHandler;
-const logger = require('../').logging();
+const Abbott = require('../').AbbottFramework;
+const logger = require('../lib/modules/logging/log4js').build(null, 'my-bot-app');
 
 var abbottConfig = {
   botName: 'abbott-sample',
   botFirendlyName: 'Abbott Sample',
-  port: process.env.PORT || 3000,
-  platforms: {
-    abbott: {}
-  },
-  nlp: {
-    apiai: {
-      token: process.env.NLP_DIALOGFLOW_TOKEN || '[YOUR_API.AI_DEVELOPER_TOKEN]'
-    }
+  languages: {
+    default: 'en-US',
+    available: [ 'en-US', 'pt-BR']
   }
+  // port: process.env.PORT || 3000,
+  // platforms: {
+  //   abbott: {}
+  // },
+  // nlp: {
+  //   apiai: {
+  //     token: process.env.NLP_DIALOGFLOW_TOKEN || '[YOUR_API.AI_DEVELOPER_TOKEN]'
+  //   }
+  // }
 };
 
 try {
-  const abbottFramework = new AbbottFramework(abbottConfig);
+  const abbott = new Abbott(abbottConfig);
+  abbott.loadDefaultModules();
 
-  abbottFramework.start()
+  abbott.modules.load(path.join(__dirname, '../lib/modules/controllers/abbott'), { 
+    verify_token: 123456
+  });
+  
+  abbott.modules.load(path.join(__dirname, '../lib/modules/messageEnrichments/nlp/dialogFlow'), {
+    token: process.env.NLP_DIALOGFLOW_TOKEN || '[YOUR_API.AI_DEVELOPER_TOKEN]'
+  });
+
+  abbott.modules.load(path.join(__dirname, 'messageHandlers/weather-msg-handler'));
+
+  abbott.prepare();
+
+  abbott.start()
     .then(() => {
-      logger.info('BOT Initialized!');
+      logger.info('Ready!');
     })
     .catch((err) => logger.error(err));
 }

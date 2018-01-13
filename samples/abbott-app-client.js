@@ -21,6 +21,10 @@ const makeRequest = (message) => {
     },
     body: JSON.stringify(payload)
   }).then((res) => {
+    if (!res.ok) {
+      throw Error(res.statusText);
+    }
+
     return res.json();
   }).then((res) => {
     return res.message;
@@ -39,9 +43,14 @@ rl.on('line', function (line) {
     rl.close();
     process.stdin.destroy();
   } else {
-    makeRequest(line).then((res) => {
-      process.stdout.write(`ABBOT: ${res.text}\n\n`);
-      process.stdout.write('YOU: ');
-    });
+    makeRequest(line)
+      .then((res) => {
+        process.stdout.write(`ABBOT: ${res.text}\n\n`);
+        process.stdout.write('YOU: ');
+      })
+      .catch((err) => {
+        process.stdout.write(`${err}\n\n`);
+        process.stdout.write('YOU: ');
+      });
   }
 });

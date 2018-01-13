@@ -10,8 +10,4 @@ module.exports = class {
 
     return [];
   }
-
-  static requireIfExits(path) {
-    return (fs.existsSync(path)) ? require(path) : null;
-  }
 };

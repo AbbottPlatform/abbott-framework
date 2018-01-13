@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = function (webserver, router) {
-  const logger = webserver.modules.resolveFor('logging', 'abbott-framework:webserver(/bot)');
+  const logger = require('../../../logging')('abbott-framework:webserver(/bot)');
   
   var mimeImage = {
     gif: 'image/gif',
